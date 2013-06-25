@@ -1,4 +1,4 @@
-PubNub WebRTC SDK v0.4.2
+PubNub WebRTC SDK v0.4.3
 ======
 
 PubNub now offers a new API for enhancing your WebRTC applications with the power of PubNub. Our WebRTC API will perform signaling between your users to allow them to connect with a RTCPeerConnection. From there you can use the PubNub API to enhance your peer application with features such as presence and history. PubNub Presence will allow you to find what users are connected to your application and give you a phonebook of people to connect to. You can also use history to see what connections you have made and reconnect to people from the past.
@@ -104,7 +104,7 @@ pubnub.subscribe({
 
 ## pubnub.peerConnection(uuid, callback)
 
-This will return the RTCPeerConnection object for the user ID given.
+This will return the RTCPeerConnection object for the user ID given. If there is no RTCPeerConnection with the given user it will call the callback with `null`.
 
 Options:
 * uuid: The unique user ID to get the RTCPeerConnection for
@@ -119,7 +119,7 @@ pubnub.peerConnection('ABC123', function (pc) {
 
 ## pubnub.dataChannel(uuid, callback)
 
-This will return the RTCDataChannel object for the user ID given.
+This will return the RTCDataChannel object for the user ID given. If there is no RTCDataChannel with the given user it will call the callback with `null`.
 
 Options:
 * uuid: The unique user ID to get the RTCDataChannel for
