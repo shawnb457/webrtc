@@ -9,7 +9,7 @@ Read more about the [PubNub API](http://pubnub.com)
 
 As a prequisite you will need a PubNub API account. You can sign up for a free account at [pubnub.com](http://pubnub.com). From there you will also need to use the administration tool to enable history, presence, and elastic message sizes. Then grab your publish and subscribe key and follow the instructions below.
 
-Currently the API is only available through GitHub. This is because the API is changing daily and we would like everyone to be on the latest version. Just clone this repo and copy the `webrtc.beta.pubnub-*.*.*.js` from the bin/ folder into your app to get started. Add this after adding the standard PubNub library like so:
+Currently the API is only available through GitHub. This is because the API is changing daily and we would like everyone to be on the latest version. Just clone this repo and copy the `webrtc-beta-pubnub.*.*.*.js` from the dist/ folder into your app to get started. Add this after adding the standard PubNub library like so:
 
 ```html
 <script type='text/javascript' src='http://cdn.pubnub.com/pubnub-*.*.*.min.js'></script>
