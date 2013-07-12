@@ -1,3 +1,5 @@
+/*! webrtc-beta-pubnub - v0.5.0 - 2013-07-12
+* Copyright (c) 2013 ; Licensed  */
 (function (window, PUBNUB) {
   //"use strict";
 
